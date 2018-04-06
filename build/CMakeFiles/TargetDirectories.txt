@@ -1,0 +1,3 @@
+/Users/sung9/Documents/강의/test/test/build/CMakeFiles/Test.dir
+/Users/sung9/Documents/강의/test/test/build/CMakeFiles/ALL_BUILD.dir
+/Users/sung9/Documents/강의/test/test/build/CMakeFiles/ZERO_CHECK.dir
