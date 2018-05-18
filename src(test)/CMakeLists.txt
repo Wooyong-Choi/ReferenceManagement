@@ -1,2 +1,0 @@
-PROJECT(Test)
-ADD_EXECUTABLE(Test main.cpp)
