@@ -70,17 +70,11 @@ void printList(char *argv[]) {
 void importFile(int argc, char *argv[]) {
     if (argc == 1) {
         string path(argv[2]);
-        cout << path << endl;
         string cmd_type = ".txt";
-        cout << cmd_type << endl;
         if (path.find(cmd_type, 0) != string::npos) {
-            cout << "1" << endl;
             vector<string> paths = FileIOManager::readFile(path);
-            cout << paths[0] << endl;
             for (int i = 0; i < paths.size(); i++) {
-		cout << i << endl;
                 Entry* entry = loadEntry(paths[i]);
-		cout << *entry << endl;
                 if (entry == NULL) {
                     cout << "Fail to import : " << paths[i] << endl << *entry << endl;
                 }
@@ -200,10 +194,11 @@ vector<Entry> loadDB(const string file_name) {
     return prod;
 }
 
-Entry* loadEntry(const string path) {
-    cout << "load entry " << path << endl;
+Entry* loadEntry(string path) {
+    if (path[path.size()-1] == '\r')
+        path = path.substr(0, path.size()-1);
+	
     vector<string> lines = FileIOManager::readFile(path);
-    cout << lines[0] << lines[1] << endl;
     map<string, string> parsed = BibParser::parseLines(lines);
     Entry* entry = EntryFactory::produce(parsed);
     

@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/workspace/cmake/new/EntryType.cpp" "/workspace/cmake/new/CMakeFiles/reference_manager.dir/EntryType.cpp.o"
-  "/workspace/cmake/new/FieldName.cpp" "/workspace/cmake/new/CMakeFiles/reference_manager.dir/FieldName.cpp.o"
-  "/workspace/cmake/new/main.cpp" "/workspace/cmake/new/CMakeFiles/reference_manager.dir/main.cpp.o"
+  "/workspace/cmake/newnew/EntryType.cpp" "/workspace/cmake/newnew/CMakeFiles/reference_manager.dir/EntryType.cpp.o"
+  "/workspace/cmake/newnew/FieldName.cpp" "/workspace/cmake/newnew/CMakeFiles/reference_manager.dir/FieldName.cpp.o"
+  "/workspace/cmake/newnew/main.cpp" "/workspace/cmake/newnew/CMakeFiles/reference_manager.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

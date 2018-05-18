@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /workspace/cmake/new
+CMAKE_SOURCE_DIR = /workspace/cmake/newnew
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /workspace/cmake/new
+CMAKE_BINARY_DIR = /workspace/cmake/newnew
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/cmake/new/CMakeFiles /workspace/cmake/new/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/cmake/newnew/CMakeFiles /workspace/cmake/newnew/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/cmake/new/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/cmake/newnew/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
