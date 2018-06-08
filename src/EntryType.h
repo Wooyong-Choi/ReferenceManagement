@@ -7,7 +7,8 @@ enum class EntryType
 {
 	article,
 	inproceedings,
-	book
+	book,
+	error
 };
 
 EntryType strToEntryType(std::string str);

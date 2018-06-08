@@ -1,6 +1,7 @@
 #ifndef BIBPARSER_HEADER
 #define BIBPARSER_HEADER
 
+#include <iostream>
 #include <string>
 #include <map>
 #include <vector>
@@ -35,7 +36,7 @@ private:
 		{
 			std::string token = str.substr(lastPos, pos - lastPos);
 			for (int i = 0; i < token.length(); i++) {
-				if (token[i] == ' ' || token[i] == '{' || token[i] == '}' || token[i] == ',' || token[i] == '\t') {
+				if (token[i] == ' ' || token[i] == '{' || token[i] == '}' || token[i] == ',' || token[i] == '\t' || token[i]=='\r') {
 					token.erase(i, 1);
 					i -= 1;
 				}
@@ -45,7 +46,7 @@ private:
 			}
 			int token_len = (int)token.length() - 1;
 			for (int i = token_len; i >= 0; i--) {
-				if (token[i] == ' ' || token[i] == '{' || token[i] == '}' || token[i] == ',' || token[i] == '\t') {
+				if (token[i] == ' ' || token[i] == '{' || token[i] == '}' || token[i] == ',' || token[i] == '\t' || token[i]=='\r') {
 					token.erase(i, 1);
 				}
 				else {
@@ -116,39 +117,48 @@ public:
 
 		std::vector<Field>* fieldList = new std::vector<Field>();
 
-		// required field check
-		for(FieldName fn : req) {
-			for(std::pair<std::string, std::string> pair : parsed) {
-				if (fieldNameToStr(fn) == pair.first) {
-					Field field(strToFieldName(pair.first), pair.second);
-					fieldList->push_back(field);
-					parsed.erase(pair.first);
-					break;
+		try {
+			// required field check
+			for (FieldName fn : req) {
+				for (std::pair<std::string, std::string> pair : parsed) {
+					if (fieldNameToStr(fn) == pair.first) {
+						Field field(strToFieldName(pair.first), pair.second);
+						fieldList->push_back(field);
+						parsed.erase(pair.first);
+						break;
+					}
 				}
 			}
-		}
 
-		// Req가 다 있는가
-		if (fieldList->size() != req.size())
-			return NULL;
+			// Req가 다 있는가
+			if (fieldList->size() != req.size())
+				throw 6;
 
-		// optional field check
-		for(FieldName fn : opt) {
-			for(std::pair<std::string, std::string> pair : parsed) {
-				if (fieldNameToStr(fn) == pair.first) {
-					Field field(strToFieldName(pair.first), pair.second);
-					fieldList->push_back(field);
-					parsed.erase(pair.first);
-					break;
+			// optional field check
+			for (FieldName fn : opt) {
+				for (std::pair<std::string, std::string> pair : parsed) {
+					if (fieldNameToStr(fn) == pair.first) {
+						Field field(strToFieldName(pair.first), pair.second);
+						fieldList->push_back(field);
+						parsed.erase(pair.first);
+						break;
+					}
 				}
 			}
-		}
 
-		// Opt에 없는게 있는가
-		if (fieldList->size() != parsedLen)
-			return NULL;
-		else
-			return fieldList;
+			// Opt에 없는게 있는가
+			if (fieldList->size() != parsedLen)
+				throw 7;
+			else
+				return fieldList;
+		}
+		catch (int x) {
+			if (x == 6)
+				std::cout << "Check Required Field" << std::endl;
+			else if (x == 7)
+				std::cout << "Check Optional Field" << std::endl;
+			exit(x);
+		}
 	}
 };
 

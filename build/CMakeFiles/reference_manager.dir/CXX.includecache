@@ -6,13 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/workspace/cmake/newnew/Article.h
+/workspace/cmake/homework3/Article.h
 vector
 -
 Entry.h
-/workspace/cmake/newnew/Entry.h
+/workspace/cmake/homework3/Entry.h
 
-/workspace/cmake/newnew/BibParser.h
+/workspace/cmake/homework3/BibParser.h
+iostream
+-
 string
 -
 map
@@ -20,17 +22,17 @@ map
 vector
 -
 Field.h
-/workspace/cmake/newnew/Field.h
+/workspace/cmake/homework3/Field.h
 common.h
-/workspace/cmake/newnew/common.h
+/workspace/cmake/homework3/common.h
 
-/workspace/cmake/newnew/Book.h
+/workspace/cmake/homework3/Book.h
 vector
 -
 Entry.h
-/workspace/cmake/newnew/Entry.h
+/workspace/cmake/homework3/Entry.h
 
-/workspace/cmake/newnew/Entry.h
+/workspace/cmake/homework3/Entry.h
 map
 -
 vector
@@ -38,55 +40,55 @@ vector
 string
 -
 EntryType.h
-/workspace/cmake/newnew/EntryType.h
+/workspace/cmake/homework3/EntryType.h
 Field.h
-/workspace/cmake/newnew/Field.h
+/workspace/cmake/homework3/Field.h
 BibParser.h
-/workspace/cmake/newnew/BibParser.h
+/workspace/cmake/homework3/BibParser.h
 common.h
-/workspace/cmake/newnew/common.h
+/workspace/cmake/homework3/common.h
 
-/workspace/cmake/newnew/EntryFactory.h
+/workspace/cmake/homework3/EntryFactory.h
 map
 -
 vector
 -
 Entry.h
-/workspace/cmake/newnew/Entry.h
+/workspace/cmake/homework3/Entry.h
 Article.h
-/workspace/cmake/newnew/Article.h
+/workspace/cmake/homework3/Article.h
 Book.h
-/workspace/cmake/newnew/Book.h
+/workspace/cmake/homework3/Book.h
 Inproceedings.h
-/workspace/cmake/newnew/Inproceedings.h
+/workspace/cmake/homework3/Inproceedings.h
 common.h
-/workspace/cmake/newnew/common.h
+/workspace/cmake/homework3/common.h
 
-/workspace/cmake/newnew/EntryType.cpp
+/workspace/cmake/homework3/EntryType.cpp
 EntryType.h
-/workspace/cmake/newnew/EntryType.h
+/workspace/cmake/homework3/EntryType.h
 
-/workspace/cmake/newnew/EntryType.h
+/workspace/cmake/homework3/EntryType.h
 string
 -
 
-/workspace/cmake/newnew/Field.h
+/workspace/cmake/homework3/Field.h
 vector
 -
 string
 -
 FieldName.h
-/workspace/cmake/newnew/FieldName.h
+/workspace/cmake/homework3/FieldName.h
 
-/workspace/cmake/newnew/FieldName.cpp
+/workspace/cmake/homework3/FieldName.cpp
 FieldName.h
-/workspace/cmake/newnew/FieldName.h
+/workspace/cmake/homework3/FieldName.h
 
-/workspace/cmake/newnew/FieldName.h
+/workspace/cmake/homework3/FieldName.h
 string
 -
 
-/workspace/cmake/newnew/FileIOManager.h
+/workspace/cmake/homework3/FileIOManager.h
 fstream
 -
 iostream
@@ -96,33 +98,35 @@ vector
 string
 -
 
-/workspace/cmake/newnew/Inproceedings.h
+/workspace/cmake/homework3/Inproceedings.h
 vector
 -
 Entry.h
-/workspace/cmake/newnew/Entry.h
+/workspace/cmake/homework3/Entry.h
 
-/workspace/cmake/newnew/common.h
+/workspace/cmake/homework3/common.h
 string
 -
 vector
 -
 FieldName.h
-/workspace/cmake/newnew/FieldName.h
+/workspace/cmake/homework3/FieldName.h
 
-/workspace/cmake/newnew/main.cpp
+/workspace/cmake/homework3/main.cpp
 iostream
 -
 string
 -
 vector
 -
+stdexcept
+-
 FileIOManager.h
-/workspace/cmake/newnew/FileIOManager.h
+/workspace/cmake/homework3/FileIOManager.h
 Entry.h
-/workspace/cmake/newnew/Entry.h
+/workspace/cmake/homework3/Entry.h
 BibParser.h
-/workspace/cmake/newnew/BibParser.h
+/workspace/cmake/homework3/BibParser.h
 EntryFactory.h
-/workspace/cmake/newnew/EntryFactory.h
+/workspace/cmake/homework3/EntryFactory.h
 

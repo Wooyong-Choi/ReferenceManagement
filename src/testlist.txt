@@ -1,3 +1,3 @@
-test1.bib
-test2.bib
-test3.bib
+paperlist/test1.bib
+paperlist/test2.bib
+paperlist/test3.bib

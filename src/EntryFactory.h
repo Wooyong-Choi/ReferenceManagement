@@ -34,28 +34,33 @@ public:
 
 		Entry* product = NULL;
 		std::vector<Field>* fieldList = NULL;
-		switch (type) {
-		case EntryType::article:
-			fieldList = BibParser::makeFieldList(reqField_article, optField_article, parsed);
-			if (fieldList != NULL)
-				product = new Article(*fieldList);
-			break;
+		try {
+			switch (type) {
+			case EntryType::article:
+				fieldList = BibParser::makeFieldList(reqField_article, optField_article, parsed);
+				if (fieldList != NULL)
+					product = new Article(*fieldList);
+				break;
 
-		case EntryType::book:
-			fieldList = BibParser::makeFieldList(reqField_book, optField_book, parsed);
-			if (fieldList != NULL)
-				product = new Book(*fieldList);
-			break;
+			case EntryType::book:
+				fieldList = BibParser::makeFieldList(reqField_book, optField_book, parsed);
+				if (fieldList != NULL)
+					product = new Book(*fieldList);
+				break;
 
-		case EntryType::inproceedings:
-			fieldList = BibParser::makeFieldList(reqField_inproceedings, optField_inproceedings, parsed);
-			if (fieldList != NULL)
-				product = new Inproceedings(*fieldList);
-			break;
+			case EntryType::inproceedings:
+				fieldList = BibParser::makeFieldList(reqField_inproceedings, optField_inproceedings, parsed);
+				if (fieldList != NULL)
+					product = new Inproceedings(*fieldList);
+				break;
 
-		default:
-			// error handling
-			break;
+			default:
+				throw 2;
+			}
+		}
+		catch (int x) {
+			std::cout << "Entry Type Error!" << std::endl;
+			exit(x);		
 		}
 
 		return product;

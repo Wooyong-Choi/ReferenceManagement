@@ -37,6 +37,8 @@ FieldName strToFieldName(std::string str) {
 		return FieldName::booktitle;
 	else if (str == "organization")
 		return FieldName::organization;
+	else if (str == "group")
+		return FieldName::group;
 	else
 		return FieldName::error;
 }
@@ -79,7 +81,8 @@ std::string fieldNameToStr(FieldName fieldName) {
 		return "booktitle";
 	case FieldName::organization:
 		return "organization";
-
+	case FieldName::group:
+		return "group";
 	default:
 		return "error";  // exception handling
 

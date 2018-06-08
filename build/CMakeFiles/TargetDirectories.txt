@@ -1,3 +1,3 @@
-/workspace/cmake/newnew/CMakeFiles/rebuild_cache.dir
-/workspace/cmake/newnew/CMakeFiles/edit_cache.dir
-/workspace/cmake/newnew/CMakeFiles/reference_manager.dir
+/workspace/cmake/homework3/CMakeFiles/rebuild_cache.dir
+/workspace/cmake/homework3/CMakeFiles/edit_cache.dir
+/workspace/cmake/homework3/CMakeFiles/reference_manager.dir

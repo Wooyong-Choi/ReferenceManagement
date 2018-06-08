@@ -21,6 +21,18 @@ protected:
 	Entry(EntryType type, std::vector<Field> fieldList) {
 		this->type = type;
 		this->fieldList = fieldList;
+
+		bool groupChk = false;
+		for (Field field : fieldList) {
+			if (field.getFieldName() == FieldName::group) {
+				groupChk = true;
+				break;
+			}
+		}
+		if (groupChk == false) {
+			Field group(FieldName::group, "Default");
+			this->fieldList.push_back(group);
+		}
 	}
 
 	friend std::ostream & operator<<(std::ostream & _stream, Entry const & mc) {

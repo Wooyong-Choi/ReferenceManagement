@@ -8,7 +8,7 @@ EntryType strToEntryType(std::string str) {
 	else if (str == "book")
 		return EntryType::book;
 	else {
-		//Error handling
+		return EntryType::error;
 	}
 }
 

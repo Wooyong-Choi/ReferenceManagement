@@ -23,7 +23,8 @@ enum class FieldName
 	url,
 	booktitle,
 	organization,
-	error
+	group,
+	error,
 };
 
 FieldName strToFieldName(std::string str);

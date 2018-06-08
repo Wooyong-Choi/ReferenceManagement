@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /workspace/cmake/newnew
+CMAKE_SOURCE_DIR = /workspace/cmake/homework3
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /workspace/cmake/newnew
+CMAKE_BINARY_DIR = /workspace/cmake/homework3
 
 # Include any dependencies generated for this target.
 include CMakeFiles/reference_manager.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/reference_manager.dir/flags.make
 
 CMakeFiles/reference_manager.dir/main.cpp.o: CMakeFiles/reference_manager.dir/flags.make
 CMakeFiles/reference_manager.dir/main.cpp.o: main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/cmake/newnew/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/reference_manager.dir/main.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/reference_manager.dir/main.cpp.o -c /workspace/cmake/newnew/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/cmake/homework3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/reference_manager.dir/main.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/reference_manager.dir/main.cpp.o -c /workspace/cmake/homework3/main.cpp
 
 CMakeFiles/reference_manager.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/reference_manager.dir/main.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/cmake/newnew/main.cpp > CMakeFiles/reference_manager.dir/main.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/cmake/homework3/main.cpp > CMakeFiles/reference_manager.dir/main.cpp.i
 
 CMakeFiles/reference_manager.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/reference_manager.dir/main.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/cmake/newnew/main.cpp -o CMakeFiles/reference_manager.dir/main.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/cmake/homework3/main.cpp -o CMakeFiles/reference_manager.dir/main.cpp.s
 
 CMakeFiles/reference_manager.dir/main.cpp.o.requires:
 
@@ -83,16 +83,16 @@ CMakeFiles/reference_manager.dir/main.cpp.o.provides.build: CMakeFiles/reference
 
 CMakeFiles/reference_manager.dir/EntryType.cpp.o: CMakeFiles/reference_manager.dir/flags.make
 CMakeFiles/reference_manager.dir/EntryType.cpp.o: EntryType.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/cmake/newnew/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/reference_manager.dir/EntryType.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/reference_manager.dir/EntryType.cpp.o -c /workspace/cmake/newnew/EntryType.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/cmake/homework3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/reference_manager.dir/EntryType.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/reference_manager.dir/EntryType.cpp.o -c /workspace/cmake/homework3/EntryType.cpp
 
 CMakeFiles/reference_manager.dir/EntryType.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/reference_manager.dir/EntryType.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/cmake/newnew/EntryType.cpp > CMakeFiles/reference_manager.dir/EntryType.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/cmake/homework3/EntryType.cpp > CMakeFiles/reference_manager.dir/EntryType.cpp.i
 
 CMakeFiles/reference_manager.dir/EntryType.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/reference_manager.dir/EntryType.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/cmake/newnew/EntryType.cpp -o CMakeFiles/reference_manager.dir/EntryType.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/cmake/homework3/EntryType.cpp -o CMakeFiles/reference_manager.dir/EntryType.cpp.s
 
 CMakeFiles/reference_manager.dir/EntryType.cpp.o.requires:
 
@@ -107,16 +107,16 @@ CMakeFiles/reference_manager.dir/EntryType.cpp.o.provides.build: CMakeFiles/refe
 
 CMakeFiles/reference_manager.dir/FieldName.cpp.o: CMakeFiles/reference_manager.dir/flags.make
 CMakeFiles/reference_manager.dir/FieldName.cpp.o: FieldName.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/cmake/newnew/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/reference_manager.dir/FieldName.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/reference_manager.dir/FieldName.cpp.o -c /workspace/cmake/newnew/FieldName.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/cmake/homework3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/reference_manager.dir/FieldName.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/reference_manager.dir/FieldName.cpp.o -c /workspace/cmake/homework3/FieldName.cpp
 
 CMakeFiles/reference_manager.dir/FieldName.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/reference_manager.dir/FieldName.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/cmake/newnew/FieldName.cpp > CMakeFiles/reference_manager.dir/FieldName.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/cmake/homework3/FieldName.cpp > CMakeFiles/reference_manager.dir/FieldName.cpp.i
 
 CMakeFiles/reference_manager.dir/FieldName.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/reference_manager.dir/FieldName.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/cmake/newnew/FieldName.cpp -o CMakeFiles/reference_manager.dir/FieldName.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/cmake/homework3/FieldName.cpp -o CMakeFiles/reference_manager.dir/FieldName.cpp.s
 
 CMakeFiles/reference_manager.dir/FieldName.cpp.o.requires:
 
@@ -143,7 +143,7 @@ reference_manager: CMakeFiles/reference_manager.dir/EntryType.cpp.o
 reference_manager: CMakeFiles/reference_manager.dir/FieldName.cpp.o
 reference_manager: CMakeFiles/reference_manager.dir/build.make
 reference_manager: CMakeFiles/reference_manager.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/workspace/cmake/newnew/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable reference_manager"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/workspace/cmake/homework3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable reference_manager"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/reference_manager.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -162,6 +162,6 @@ CMakeFiles/reference_manager.dir/clean:
 .PHONY : CMakeFiles/reference_manager.dir/clean
 
 CMakeFiles/reference_manager.dir/depend:
-	cd /workspace/cmake/newnew && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspace/cmake/newnew /workspace/cmake/newnew /workspace/cmake/newnew /workspace/cmake/newnew /workspace/cmake/newnew/CMakeFiles/reference_manager.dir/DependInfo.cmake --color=$(COLOR)
+	cd /workspace/cmake/homework3 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspace/cmake/homework3 /workspace/cmake/homework3 /workspace/cmake/homework3 /workspace/cmake/homework3 /workspace/cmake/homework3/CMakeFiles/reference_manager.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/reference_manager.dir/depend
 
