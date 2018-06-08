@@ -293,34 +293,70 @@ void updateElement(char *argv[]) {
 }
 
 void printStat() {
-	vector<int> years;
-	map<string, int> stat;
-	map<string, int>::iterator iter;
-	iter = stat.begin();
-
-	int count = 0;
-	for (int i = 0; i < rm_db.size(); i++) {
-		for (int j = 0; j < rm_db[i].getFieldList().size(); j++) {
-			if (fieldNameToStr(rm_db[i].getFieldList()[j].getFieldName()) == "year") {
-				//cout << rm_db[i].getFieldList()[j].getFieldValue() << endl;
-				if (!stat[rm_db[i].getFieldList()[j].getFieldValue()]) {
-					stat[rm_db[i].getFieldList()[j].getFieldValue()] = 1;;
-					count += 1;
-				}
-				else {
-					stat[rm_db[i].getFieldList()[j].getFieldValue()] += 1;
-					count += 1;
-				}
-				//years.push_back(rm_db[i].getFieldList()[j].getFieldValue);
-			}
-		}
-	}
-
-	cout << "Total reference : " << count << endl << endl;
-
-	for (iter = stat.begin(); iter != stat.end(); ++iter) {
-		cout << "(In " << (*iter).first << " : " << (*iter).second << " )" << endl;
-	}
+    map<string, int> stat_year;
+    map<string, int>::iterator iter;
+    
+    int count = 0;
+    for (int i = 0; i < rm_db.size(); i++) {
+        for (int j = 0; j < rm_db[i].getFieldList().size(); j++) {
+            if (fieldNameToStr(rm_db[i].getFieldList()[j].getFieldName()) == "year") {
+                //cout << rm_db[i].getFieldList()[j].getFieldValue() << endl;
+                if (!stat_year[rm_db[i].getFieldList()[j].getFieldValue()]) {
+                    stat_year[rm_db[i].getFieldList()[j].getFieldValue()] = 1;
+                    count += 1;
+                }
+                else {
+                    stat_year[rm_db[i].getFieldList()[j].getFieldValue()] += 1;
+                    count += 1;
+                }
+            }
+        }
+    }
+    
+    map<string, int> stat_author;
+    for (int i = 0; i < rm_db.size(); i++) {
+        for (int j = 0; j < rm_db[i].getFieldList().size(); j++) {
+            if (fieldNameToStr(rm_db[i].getFieldList()[j].getFieldName()) == "author") {
+                if (!stat_author[rm_db[i].getFieldList()[j].getFieldValue()]) {
+                    stat_author[rm_db[i].getFieldList()[j].getFieldValue()] = 1;
+                }
+                else {
+                    stat_author[rm_db[i].getFieldList()[j].getFieldValue()] += 1;
+                }
+            }
+        }
+    }
+    
+    int cnt_entry[3] = { 0, 0, 0 };
+    for (Entry e : rm_db) {
+        switch (e.getEntryType()) {
+            case EntryType::article:
+                cnt_entry[0]++;
+                break;
+                
+            case EntryType::book:
+                cnt_entry[1]++;
+                break;
+                
+            case EntryType::inproceedings:
+                cnt_entry[2]++;
+                break;
+        }
+    }
+    
+    cout << "Total reference : " << count << endl << endl;
+    
+    cout << "(article       " << " : " << cnt_entry[0] << " )" << endl;
+    cout << "(book          " << " : " << cnt_entry[1] << " )" << endl;
+    cout << "(inproceedings " << " : " << cnt_entry[2] << " )" << endl << endl;
+    
+    for (iter = stat_year.begin(); iter != stat_year.end(); ++iter) {
+        cout << "(In " << (*iter).first << " : " << (*iter).second << " )" << endl;
+    }
+    cout << endl;
+    for (iter = stat_author.begin(); iter != stat_author.end(); ++iter) {
+        cout << "(Author " << (*iter).first << " : " << (*iter).second << " )" << endl;
+    }
 }
 
 void saveDB(const string file_name, const vector<Entry>& prod) {
