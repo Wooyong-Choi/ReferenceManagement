@@ -10,4 +10,5 @@ Team members
 
 ## Test script
 
-![3. Assignment_03_test script(권성구, 정이안, 최우용).pptx](https://github.com/Wooyong-Choi/ReferenceManagement/files/2084679/3.Assignment_03_test.script.pptx)
+!![1232131231312313](https://user-images.githubusercontent.com/25603727/41162490-fca9df72-6b70-11e8-9372-852eb10a2be9.png)
+
