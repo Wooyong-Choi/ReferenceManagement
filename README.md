@@ -10,4 +10,5 @@ Team members
 
 ## Test script
 
-![2 assignment_02_test script](https://user-images.githubusercontent.com/37574306/40242323-59031718-5af8-11e8-8423-d51cd64a8903.png)
+![1232131231312313](https://user-images.githubusercontent.com/25603727/41162490-fca9df72-6b70-11e8-9372-852eb10a2be9.png)
+
